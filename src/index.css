@@ -24,7 +24,7 @@ body {
 
 .dashboard-main {
   padding: 20px;
-  background-color: #f3f7ff;
+  background-color: #dce4f5;
   min-height: 100vh;
 }
 
@@ -159,3 +159,439 @@ background-color: white;
 .green-card {
   background-color: #20b957;
 }
+
+.quick-actions {
+
+  background: white;
+  padding: 20px;
+  margin: 0 20px 20px;
+  border-radius: 14px;
+}
+
+
+
+.quick-actions h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.quick-actions-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ gap: 14px;
+}
+
+.quick-actions-buttons button {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+
+.quick-actions-buttons button:first-child{
+  background: #3478f6;
+}
+
+.quick-actions-buttons button:last-child{
+  background: #a43cf0;
+}
+
+.add-student-btn{
+  background: #3478f6;
+}
+.create-class-btn
+{
+  background: #a43cf0;
+}
+
+
+
+.recent-activity {
+  background: white;
+  margin: 0 20px 20px;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.recent-activity-item{
+  background: #f7f8fc;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  color: #222;
+  gap: 14px;
+  display: flex;
+  align-items: center;
+
+}
+
+.recent-activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.recent-activity-header h2{
+  margin: 0;
+  font-size: 18px;
+}
+
+.recent-activity-header span{
+ font-size: 14px;
+ cursor: pointer;
+}
+
+
+.activity-item {
+  background: #f7f8fc;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.activity-item h3 {
+ 
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #222;
+}
+
+
+
+.activity-item p {
+  margin: 0 0 4px;
+  font-size: 13px;
+  color: #555;
+}
+
+.activity-item small{
+  font-size: 12px;
+  color: #777;
+}
+
+
+.recent-activity-item {
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f7f8fc;
+ 
+}
+.activity-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.class-overview {
+
+  background: white;
+  margin: 0 20px 20px;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.class-overview-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 18px;
+}
+.class-overview-header h3 {
+  margin: 0;
+}
+
+.class-overview-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.class-card  h3 {
+ margin-top: 4px;
+ margin-bottom: 4px;
+
+}
+
+
+.class-card-top  p{
+margin: 0 0 8px;
+}
+
+.class-card > p {
+margin: 8px 0 0;
+line-height: 1.35;
+}
+
+
+.class-card {
+  background: #f7f8fc;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.class-card-top {
+display: flex;
+align-items: flex-start;
+gap: 12px;
+margin: 0;
+
+}
+
+.class-icon {
+  width: 38px;
+  height: 38px;
+  background: #ff6b00;
+  color: white;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.upcoming-reminder {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 0 20px 20px;
+}
+
+.upcoming-reminder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+
+.upcoming-reminder-header h3,
+.upcoming-reminder-header p {
+  margin: 0;
+}
+
+.reminder-item {
+  position: relative;
+  background: #f7f8fc;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.priority {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.priority.high {
+  background: #ffe5e5;
+  color: #ff4d4d;
+
+}
+
+.priority.medium {
+  background: #fff0dc;
+  color: #ff8a00;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+
+}
+
+.left-column,
+right-column  {
+
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+}
+.upcoming-reminder,
+performance-summary {
+ width: 100%;
+ margin: 0;
+}
+
+
+.performance-summary {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  margin-top: 24px;
+}
+
+.performance-summary h3 {
+  margin-top:  0;
+  margin-bottom: 18px;
+}
+
+.performance-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.performance-row p {
+  margin: 8px 0;
+}
+.overall-score {
+  width: 72px;
+  height: 72px;
+ background: conic-gradient(
+#7c4dff 0% 85%,
+#e5e7eb 85% 100%
+ );
+  border-radius: 50%;
+  margin: 18px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+
+
+}
+
+.overall-score::before {
+  content: "";
+  width: 58px;
+  height: 58px;
+  background: white;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.overall-score strong,
+.overall-score span {
+  position: relative;
+  z-index: 1;
+}
+
+.overall-score strong {
+  font-size: 18px;
+}
+.overall-score span {
+  font-size: 11px;
+}
+
+
+
+
+.calendar-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  align-items: center;
+}
+
+
+
+.calendar-header h3 {
+  margin: 0;
+}
+
+
+.calendar-header button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 12px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.calendar-grid span:nth-child(-n + 7) {
+  color: #8b93a1;
+  font-weight: bold;
+}
+
+.calendar-grid span {
+  color: #111827;
+  font-weight: 600;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.selected-day {
+  background: #7c4dff;
+  color: white !important;
+  border-radius: 8px;
+  padding: 6px;
+}
+
+@media (max-width: 900) {
+  .stat-container{
+    grid-template-columns: repeat( 2, 1fr);
+  }
+  .quick-actions-buttons {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px){
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .class-overview-cards {
+    grid-template-columns: 1fr;
+  }
+  .sidebar{
+    width: 100%;
+    min-height:auto;
+  }
+  .stat-container{
+    grid-template-columns: 1fr;
+
+  }
+  .dashboard-main{
+    padding: 10px;
+  }
+}
+
+

@@ -1,14 +1,18 @@
 
-import { Home, BookOpen, Users, MessageSquare, Settings, LogOut,} from "lucide-react"
+import { Home, BookOpen, Users, MessageSquare, Settings, LogOut, Menu, X} from "lucide-react"
 
 
 function Sidebar(){
+  
 
     return (
         <aside className="sidebar"> 
-
+        
+        
       <h2>ClassPilot</h2>
+     
 
+      
       <nav>
        <p><Home size={20} /> Dashboard</p>
        <p><BookOpen  size={20} /> Courses</p>
@@ -18,9 +22,9 @@ function Sidebar(){
       </nav>
 
       <button><LogOut  size={18} /> Sign Out</button>
-
+      
      </aside>
-
+     
     );
 }
 
