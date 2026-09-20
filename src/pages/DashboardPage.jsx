@@ -1,7 +1,12 @@
 import Sidebar from "../components/Sidebar";
 import Header from  "../components/Header";
 import StatCard from "../components/StatCard" ;
-
+import QuickActions from "../components/QuickActions";
+import RecentActivity  from "../components/RecentActivity";
+import ClassOverview from "../components/ClassOverview";
+import UpcomingReminder from "../components/UpcomingReminder";
+import PerformanceSummary from "../components/PerformanceSummary";
+import Calendar from "../components/Calendar";
 
 function DashboardPage() {
 
@@ -45,15 +50,27 @@ function DashboardPage() {
   text="This semester"
   color="green-card"
   />
-
-
   
 </div>
+ <div className="dashboard-grid"> 
+  <div className="left-column"> 
 
-    
+  <QuickActions />
+  <RecentActivity />
+  <ClassOverview />
+
+  </div> 
+
+  <div className="right-column">
+  <Calendar />
+ <UpcomingReminder />
+ <PerformanceSummary />
+</div>
+</div>
  </main>
 </div>
 </div>
+
 
  );
 }
